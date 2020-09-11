@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Application Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/main.js"></script>
+    <style>
+        body {
+            background-image: url("images/mountains_background.jpg");
+            /*  background image to stretch to fit the entire element */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size: x-large;">
+        <!-- Application Dashboard -->
+    </div>
+    <div>
+        <table id="header_table">
+            <tr>
+                <td style="font-size: x-large; height: 35px;">Application Dashboard</td>
+                <td>
+                    <input id="add_row" type="button" class="button" value="+" onclick="addRow('app_table')">
+                    <input id="rm_row" type="button" class="button" value="-" onclick="deleteRow('app_table')">
+                </td>
+            </tr>
+        </table>
+        <table id="app_table">
+            <tr style="font-weight: bold;">
+                <td>Company</td>
+                <td>Job Title</td>
+                <td>Application Date</td>
+                <td>Location</td>
+                <td>Notes</td>
+                <td>Status</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <div contenteditable>Amazon</div>
+                </td>
+                <td>
+                    <div contenteditable>Software Development Engineer I</div>
+                </td>
+                <td>
+                    <div contenteditable>4/20/2020</div>
+                </td>
+                <td>
+                    <div contenteditable>Seattle, WA</div>
+                </td>
+                <td>
+                    <div contenteditable>applied online</div>
+                </td>
+                <td>
+                    <div contenteditable>In Review</div>
+                </td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div contenteditable>State Farm</div>
+                </td>
+                <td>
+                    <div contenteditable>Software Developer</div>
+                </td>
+                <td>
+                    <div contenteditable>4/20/2020</div>
+                </td>
+                <td>
+                    <div contenteditable>Bloomington, IL</div>
+                </td>
+                <td>
+                    <div contenteditable>applied with LinkedIn Resume</div>
+                </td>
+                <td>
+                    <div contenteditable>In Review</div>
+                </td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <!-- <input id="add_row" type="button" class="button" value="+" onclick="addRow('app_table')">
+        <input id="rm_row" type="button" class="button" value="-" onclick="removeRow('app_table')"> -->
+    </div>
+</body>
+
+</html>
